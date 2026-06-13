@@ -1,15 +1,12 @@
-# 🎮 goonCave
+# 🐻 goonCave
 
 A personal learning log for Linux and cybersecurity fundamentals.
 
-This repo is my external brain — a place to capture and reference what I'm learning, especially commands and concepts from "Linux Basics for Hackers" and my HackTheBox journey.
+This repo is a desperate attempt to store and track information I deem important, as I learn and experiment with things I am bound to forget, next time I distro hop and lose my files or start another windows gaming binge that should steal another year of my sorry existence.
 
 ## 📚 What's Inside
 
-- **LINUX/** — Linux fundamentals, commands, and concepts
-- **HACKING/** — Hacking techniques, reconnaissance, scanning, vulnerabilities
-- **HACKTHEBOX/** — HackTheBox machine writeups and lessons learned
-- **PROGRESS.md** — Track what I'm learning and milestones
+- **LINUX/** — commands, scripts, painful nvidia ordeals
 
 ## 🚀 Quick Navigation
 
@@ -18,16 +15,6 @@ This repo is my external brain — a place to capture and reference what I'm lea
 - [File System & Permissions](./LINUX/file-system.md)
 - [Navigation](./LINUX/navigation.md)
 - [Getting Help](./LINUX/getting-help.md)
-
-### Hacking & Security
-- [Reconnaissance](./HACKING/reconnaissance.md)
-- [Scanning & Tools](./HACKING/scanning.md)
-- [Vulnerabilities](./HACKING/vulnerabilities.md)
-- [Cheat Sheet](./HACKING/cheat-sheet.md)
-
-### HackTheBox
-- [Machine Writeups](./HACKTHEBOX/writeups.md)
-- [Lessons Learned](./HACKTHEBOX/lessons-learned.md)
 
 ## 📝 How I Use This
 
