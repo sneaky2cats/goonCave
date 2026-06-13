@@ -35,16 +35,4 @@ ps -ef          # similar to ps aux, different format
 - `ps aux` shows everything running on the entire system
 - When you run `ps`, you'll see the shell itself + the ps command you just ran
 
-## Getting Help
-
-```bash
-command --help              # most reliable (works almost everywhere)
-man command                 # detailed manual
-bash -c "help command"      # run bash help without switching shells
-```
-
-**Note:** `help` is a bash built-in only, not available in zsh
-
----
-
 **Book Reference:** Linux Basics for Hackers - Chapter 1
