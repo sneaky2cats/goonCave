@@ -39,9 +39,6 @@ tail -n+10 /etc/passwd | head -n 3
 history | grep snapper
 ```
 ## In less and man
-/ starts a search
-n searches next
-N searches last
 ```Bash
 Summary Cheat Sheet
 Tool	Search Mode	Go to Next	Go to Last (Previous)
