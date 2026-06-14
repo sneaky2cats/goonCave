@@ -14,18 +14,11 @@ Bash
 nvidia-smi
 
 STEP 4 Command
-Bash
+``Bash
 
-env | grep -E "XDG_SESSION_TYPE|WAYLAND"
+env | grep -E "XDG_SESSION_TYPE|WAYLAND"``
 
 STEP 5 Command
-Bash
+``Bash
 
-prime-run glxinfo | grep "OpenGL renderer"
-
-STEP 6 Command
-Bash
-
-systemctl suspend
-# (Wake system up, then run:)
-sudo dmesg | grep -i nvidia
+prime-run glxinfo | grep "OpenGL renderer"``
