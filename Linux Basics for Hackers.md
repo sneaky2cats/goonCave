@@ -1,9 +1,15 @@
 ## Chapter 1
-### Identifying
+### Identifying Stuff
 ```Bash
 whoami
 uname
 hostname
+```
+### Getting the Shell
+```Bash
+echo #SHELL
+echo #0
+ps
 ```
 ### Moving Around
 ```Bash
@@ -25,9 +31,4 @@ locate fileName
 which filename
 find -type file -name fileName.\* 2> /dev/null
 ```
-### Getting the Shell
-```Bash
-echo #SHELL
-echo #0
-ps
-```
+
