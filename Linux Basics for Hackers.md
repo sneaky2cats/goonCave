@@ -69,6 +69,14 @@ tail -n+10 /etc/passwd | head -n 3    # Slices the file to print exactly lines 1
 history | grep "snapper"              # Search your past commands for specific keywords
 
 ```
+### Inside less or man:
+
+```Bash
+/keyword    # Search forward for a word
+?keyword    # Search backward for a word
+n / N       # Next match / Previous (Last) match
+
+``
 
 ---
 
