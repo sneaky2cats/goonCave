@@ -1,32 +1,34 @@
-START
- │
- ├── STEP 1: Core & Blueprint Verification (The Kernel & Headers)
- │    │   Command: ```uname -r && pacman -Q | grep -E "linux|headers"```
- │    └── Logic: Software cannot talk to hardware without a bridge. 
- │               Ensure the running kernel matches the active header version exactly.
- │
- ├── STEP 2: Hardware Awareness (The Detection)
- │    │   Command: ```lspci -k | grep -A 3 -E "VGA|3D"```
- │    └── Logic: Confirm the motherboard physically sees both chips (Intel/AMD + NVIDIA)
- │               and verify that the "kernel driver in use" is 'nvidia', not 'nouveau' (open-source) or 'none'.
- │
- ├── STEP 3: Driver State (The Pulse Check)
- │    │   Command: ```nvidia-smi```
- │    └── Logic: Query the Nvidia binary directly. If it responds, the driver is alive.
- │               Check "Processes"—if empty on a hybrid laptop, the card is successfully idling (saving power).
- │
- ├── STEP 4: Display Server Environment (The Context)
- │    │   Command: ```env | grep -E "XDG_SESSION_TYPE|WAYLAND"```
- │    └── Logic: Identify if the system runs X11 or Wayland. 
- │               Wayland handles multi-GPU routing automatically; X11 requires manual provider mapping.
- │
- ├── STEP 5: Render Offload Test (The Execution)
- │    │   Command: ```prime-run glxinfo | grep "OpenGL renderer"```
- │    └── Logic: Force a specific application onto the discrete GPU. 
- │               If the output string names the Nvidia card instead of the integrated chip, PRIME is active.
- │
- └── STEP 6: Power Management Stability (The Stress Test)
-      │   Command: ```systemctl suspend  ==>  (Wake system)  ==>  sudo dmesg | grep -i nvidia```
-      └── Logic: Forcing ACPI sleep states tests if the driver can gracefully save its VRAM state 
-                 to system RAM and re-initialize the GPU hardware clocks upon wake without panicking.
- END
+Step-by-Step Commands
+
+Here are the clean, copy-pasteable terminal blocks corresponding to each step above:
+STEP 1 Command
+Bash
+
+uname -r && pacman -Q | grep -E "linux|headers"
+
+STEP 2 Command
+Bash
+
+lspci -k | grep -A 3 -E "VGA|3D"
+
+STEP 3 Command
+Bash
+
+nvidia-smi
+
+STEP 4 Command
+Bash
+
+env | grep -E "XDG_SESSION_TYPE|WAYLAND"
+
+STEP 5 Command
+Bash
+
+prime-run glxinfo | grep "OpenGL renderer"
+
+STEP 6 Command
+Bash
+
+systemctl suspend
+# (Wake system up, then run:)
+sudo dmesg | grep -i nvidia
