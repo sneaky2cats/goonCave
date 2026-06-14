@@ -5,33 +5,33 @@ whoami
 uname
 hostname
 ```
-🐚 ### Getting the Shell
+🐚 ## Getting the Shell
 ```Bash
 echo #SHELL
 echo #0
 ps
 ```
-🚗 ### Moving Around
+🚗 ## Moving Around
 ```Bash
 .
 ..
 cd ../..
 ```
-💔 ### Getting Help
+💔 ## Getting Help
 ```Bash
 help command
 command --help
 command -h
 command -?
 ```
-🔎 ### Finding Stuff
+🔎 ## Finding Stuff
 ```Bash
 locate fileName
 updatedb
 which filename
 find -type file -name fileName.\* 2> /dev/null
 ```
-😲 ### nl, grep, head, tail
+😲 ## nl, grep, head, tail
 ```Bash
 nl /etc/passwd
 grep noob /etc/passwd
