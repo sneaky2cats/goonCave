@@ -16,3 +16,8 @@ command --help
 command -h
 command -?
 ```
+```Bash
+locate fileName
+which filename
+find -type file -name fileName.\* 2> /dev/null
+```
