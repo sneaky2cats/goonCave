@@ -60,6 +60,7 @@ find . -type f -name "fileName*" 2>/dev/null # Deep search, hiding permission er
 
 ## 📖 Chapter 2: Text Manipulation
 
+
 ### 😲 Inspecting and Filtering Files
 
 ```bash
@@ -69,17 +70,14 @@ tail -n+10 /etc/passwd | head -n 3    # Slices the file to print exactly lines 1
 history | grep "snapper"              # Search your past commands for specific keywords
 
 ```
-### Inside less or man:
+### ✈️ Inside less or man:
 
 ```Bash
 /keyword    # Search forward for a word
 ?keyword    # Search backward for a word
 n / N       # Next match / Previous (Last) match
 
-``
-
----
-
+```
 ## 📖 Chapter 3: Networking
 
 ### 🐶 Inspecting the Network
