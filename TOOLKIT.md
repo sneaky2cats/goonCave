@@ -1,6 +1,8 @@
 # 🧰 Toolkit
 > *This will be my toolkit.*
 
+---
+
 ### 🔍 `curl` & `grep`
 ```bash
 curl -sL mzelo.com | grep -iEC 5 browser|vpn|ip
