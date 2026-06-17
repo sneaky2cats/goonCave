@@ -12,10 +12,6 @@ ssh <USERNAME>@<HOST> -p <PORT>
 
 ---
 
-## 📂 File & Folder Basics
-```Bash
-ls           # List all items here 📄📌 Important Rules
-```
 ❌ URLs ≠ Hostnames: https://.../path is NOT a host
 ✅ Hostname: Only the address part (no slashes, no paths)
 
