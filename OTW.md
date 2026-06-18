@@ -4,12 +4,14 @@
 
 ## 🔓 OTW Passwords - Use these! 
 ```Bash
-ssh -bandit* -p 2220 bandit.labs.overthewire.org  # bandit1 ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
-                                                  # bandit2 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
-                                                  # bandit3 MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
-                                                  # bandit4 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
-                                                  # bandit5 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
-                                                  # bandit6 HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
+ssh -bandit* -p 2220 bandit.labs.overthewire.org
+# bantit0 bandit0
+# bandit1 ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+# bandit2 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+# bandit3 MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
+# bandit4 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
+# bandit5 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
+# bandit6 HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
 ```
 
 ---
