@@ -83,6 +83,7 @@ n / N       # Next match / Previous (Last) match
 ### 🐶 Inspecting the Network
 
 ```bash
+xxx.xxx.xxx.xxx/yy                            # an IP address followed by a prefix length (subnet mask)
 ip a                                          # View all active IP and MAC addresses (Replaces ifconfig)
 ip r                                          # Check your routing table and default gateway
 iw dev                                        # Lists wireless devices and their"phy"
@@ -90,7 +91,3 @@ ip addr replace x.x.x.x/y dev z               # Assigns a new ip address and net
 it addr replace x.x.x/y broadcat x.x.x dev z  # assigns a broadcast as well
 
 ```
-### ❗ CIDR (Classless Inter-Domain Routing) Notation
-
-```bash
-xxx.xxx.xxx.xxx/yy  # an IP address followed by a prefix length (subnet mask)
