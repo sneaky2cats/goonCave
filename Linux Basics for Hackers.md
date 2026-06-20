@@ -92,4 +92,5 @@ it addr replace x.x.x/y broadcat x.x.x dev z  # assigns a broadcast as well
 ```
 ### ❗ CIDR (Classless Inter-Domain Routing) Notation
 
-In CIDR, xxx.xxx.xxx.xxx/yy represents an IP address followed by a Prefix Length. The Prefix Length dictates the Subnet Mask.
+```bash
+xxx.xxx.xxx.xxx/yy  # an IP address followed by a prefix length (subnet mask)
