@@ -87,7 +87,23 @@ xxx.xxx.xxx.xxx/yy                            # an IP address followed by a pref
 ip a                                          # View all active IP and MAC addresses (Replaces ifconfig)
 ip r                                          # Check your routing table and default gateway
 iw dev                                        # Lists wireless devices and their"phy"
+```
+
+---
+
+### ⚔️ Replacing IP and Netmask
+
+```bash
 ip addr replace x.x.x.x/y dev z               # Assigns a new ip address and netmask
 it addr replace x.x.x/y broadcat x.x.x dev z  # assigns a broadcast as well
+```
 
+---
+
+### 🥷 Spoofing the Mac Address
+
+```bash
+ip link set dev z down                       # bring the interface down
+ip link set dev z address XX:XX:XX:XX:XX:XX  # change mac address
+ip link set dev z up                         # duh
 ```
