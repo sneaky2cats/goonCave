@@ -83,8 +83,9 @@ n / N       # Next match / Previous (Last) match
 ### 🐶 Inspecting the Network
 
 ```bash
-ip a                                 # View all active IP and MAC addresses (Replaces ifconfig)
-ip r                                 # Check your routing table and default gateway
-iw dev                               # Lists wireless devices and shows their"phy" (physical wireless hardware)
-ip addr replace x.x.x.x/24 dev eth0  # Assigns a new ip address
+ip a                                          # View all active IP and MAC addresses (Replaces ifconfig)
+ip r                                          # Check your routing table and default gateway
+iw dev                                        # Lists wireless devices and their"phy"
+ip addr replace x.x.x.x/y dev z               # Assigns a new ip address and netmask
+it addr replace x.x.x/y broadcat x.x.x dev z  # assigns a broadcast as well
 ```
