@@ -122,8 +122,6 @@ dig @8.8.8.8 website.com    # specifies a dns resolver
 
 ### 👾 Searching, Installing and Removing Packages in Arch
 
----
-
 ```bash
 
 pacman -S package   # installs a packaage
