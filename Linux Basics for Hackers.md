@@ -108,6 +108,8 @@ ip link set dev z address XX:XX:XX:XX:XX:XX  # change mac address
 ip link set dev z up                         # duh
 ```
 
+---
+
 ### 🐕 Digging with dig
 
 ```bash
@@ -116,3 +118,16 @@ dig ns website.com          # name server record type
 dig website.com mx          # mail server record type
 dig txt website.com +short  # text reord type, shot version
 dig @8.8.8.8 website.com    # specifies a dns resolver
+```
+
+---
+
+### 🥊 hosts and resolv.conf are stored in:
+
+```bash
+/etc/resolv.conf
+/etc/hosts
+```
+
+---
+
